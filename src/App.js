@@ -1,10 +1,14 @@
 import './App.css';
 import Calculator from './components/Calculator';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <Calculator />
-  );
+class App extends Component {
+  state = {  } 
+  render() { 
+    return (
+      <Calculator />
+    );
+  }
 }
-
+ 
 export default App;
