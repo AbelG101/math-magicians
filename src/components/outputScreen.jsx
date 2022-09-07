@@ -1,19 +1,9 @@
-import React, { Component } from 'react';
+import { React } from 'react';
 
-class OutputScreen extends Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
-
-  render() {
-    const { state: { total, next, operation } } = this.props;
-    return (
-      <div className="output-screen-container">
-        <input value={next || operation || total || 0} readOnly className="output-screen" type="text" />
-      </div>
-    );
-  }
-}
+const OutputScreen = ({ state: { total, next, operation } }) => (
+  <div className="output-screen-container">
+    <input value={next || operation || total || 0} readOnly className="output-screen" type="text" />
+  </div>
+);
 
 export default OutputScreen;
