@@ -1,34 +1,29 @@
-import React, { Component } from 'react';
-import NumericKeys from './numericKeys';
-import OperatorKeys from './operatorKeys';
-import OutputScreen from './outputScreen';
+import React, { useState } from 'react';
+import NumericKeys from './NumericKeys';
+import OperatorKeys from './OperatorKeys';
+import OutputScreen from './OutputScreen';
 import calculate from '../logic/calculate';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 0,
-      next: null,
-      operation: null,
-    };
-  }
+const Calculator = () => {
+  const [calculator, setCalculator] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+  });
 
-  handleEvent = (event) => {
+  const handleEvent = (event) => {
     const btn = event.target.textContent;
-    const obj = calculate(this.state, btn);
-    this.setState(obj);
-  }
+    const obj = calculate(calculator, btn);
+    setCalculator(obj);
+  };
 
-  render() {
-    return (
-      <div className="calculator">
-        <OutputScreen state={this.state} />
-        <OperatorKeys handleEvent={this.handleEvent} />
-        <NumericKeys handleEvent={this.handleEvent} />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="calculator">
+      <OutputScreen state={calculator} />
+      <OperatorKeys handleEvent={handleEvent} />
+      <NumericKeys handleEvent={handleEvent} />
+    </div>
+  );
+};
 
 export default Calculator;
