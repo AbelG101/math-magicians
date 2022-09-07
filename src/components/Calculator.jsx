@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import NumericKeys from './numericKeys';
-import OperatorKeys from './operatorKeys';
-import OutputScreen from './outputScreen';
+import NumericKeys from './NumericKeys';
+import OperatorKeys from './OperatorKeys';
+import OutputScreen from './OutputScreen';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
