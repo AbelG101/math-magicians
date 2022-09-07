@@ -7,9 +7,10 @@ class OutputScreen extends Component {
   }
 
   render() {
+    const { state: { total, next, operation } } = this.props;
     return (
       <div className="output-screen-container">
-        <input className="output-screen" type="text" />
+        <input value={next || operation || total || 0} readOnly className="output-screen" type="text" />
       </div>
     );
   }
