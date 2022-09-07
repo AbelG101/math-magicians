@@ -1,6 +1,7 @@
 import './App.css';
 
 import React, { Component } from 'react';
+// eslint-disable-next-line import/extensions
 import Calculator from './components/Calculator.jsx';
 
 class App extends Component {
