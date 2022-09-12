@@ -2,14 +2,6 @@ import React from 'react';
 
 const Home = () => (
   <>
-    <nav className="nav-container">
-      <h1>Math Magicians</h1>
-      <ul className="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Calculator</a></li>
-        <li><a href="#">Quote</a></li>
-      </ul>
-    </nav>
     <main className="home-content">
       <header className="content-header">
         <h2>Welcome to our page!</h2>
