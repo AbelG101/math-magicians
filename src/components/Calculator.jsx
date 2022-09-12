@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import NumericKeys from './NumericKeys';
-import OperatorKeys from './OperatorKeys';
-import OutputScreen from './OutputScreen';
+import NumericKeys from './numericKeys';
+import OperatorKeys from './operatorKeys';
+import OutputScreen from './outputScreen';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
@@ -18,11 +18,16 @@ const Calculator = () => {
   };
 
   return (
-    <div className="calculator">
-      <OutputScreen state={calculator} />
-      <OperatorKeys handleEvent={handleEvent} />
-      <NumericKeys handleEvent={handleEvent} />
-    </div>
+    <main className="calculator-container">
+      <header>
+        <h2>Lets do some math!</h2>
+      </header>
+      <div className="calculator">
+        <OutputScreen state={calculator} />
+        <OperatorKeys handleEvent={handleEvent} />
+        <NumericKeys handleEvent={handleEvent} />
+      </div>
+    </main>
   );
 };
 
