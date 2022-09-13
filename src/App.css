@@ -15,6 +15,24 @@ html {
   justify-content: space-around;
 }
 
+.content-header h2 {
+  text-shadow: 4px 4px #fce3cf;
+  transition: ease-in 0.5s;
+}
+
+.calculator-container h2 {
+  text-shadow: 4px 4px hsl(27, 88%, 88%);
+  transition: ease-in 0.5s;
+}
+
+.content-header h2:hover {
+  text-shadow: none;
+}
+
+.calculator-container h2:hover {
+  text-shadow: none;
+}
+
 .calculator {
   width: 80%;
   display: grid;
