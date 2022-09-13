@@ -6,9 +6,9 @@ const Navbar = () => (
     <nav className="nav-container">
       <h1>Math Magicians</h1>
       <ul className="nav-links">
-        <CustomLink to="/">Home</CustomLink>
-        <CustomLink to="/calculator">Calculator</CustomLink>
-        <CustomLink to="/quote">Quote</CustomLink>
+        <CustomLink to="/math-magicians">Home</CustomLink>
+        <CustomLink to="/math-magicians/calculator">Calculator</CustomLink>
+        <CustomLink to="/math-magicians/quote">Quote</CustomLink>
       </ul>
     </nav>
   </>
