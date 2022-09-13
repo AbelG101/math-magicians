@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-> [Click here](https://github.com/AbelG101/math-magicians)
+> [Click here](https://abelg101.github.io/math-magicians/)
 
   
 
