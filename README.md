@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-> [Click here](https://abelg101.github.io/math-magicians/)
+> [Click here](https://abelg101-math-magicians.netlify.app/)
 
   
 
